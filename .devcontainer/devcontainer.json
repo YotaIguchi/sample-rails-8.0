@@ -1,0 +1,17 @@
+{
+  "name": "Rails 8.0 / Ruby 3.3.4 Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "rebornix.Ruby",
+    "castwide.solargraph"
+  ],
+  "postCreateCommand": "bundle install",
+  "forwardPorts": [3000],
+  "remoteUser": "root"
+}
